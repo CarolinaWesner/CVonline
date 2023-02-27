@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("fondo.jpg");
+	background-size: 100% 120%;
+	font-family: 'Open sans';
+}
+
+.encabezado {
+	background: #0081b48f;
+	margin: 30px 100px 15px 100px;
+	border-radius: 20px;
+	padding: 20px 150px 20px 150px;
+
+}
+
+header img {
+	position: relative;
+	border-radius: 20px;
+	width: 35%;
+	box-shadow: 2px 2px 7px 1px #000a11d9;
+}
+
+#nombre {
+	position: relative;
+	float: right;
+	font-size: 90px;
+	font-family: 'Amaranth', sans-serif;
+	letter-spacing: 1mm;
+	color: aliceblue;
+	text-shadow: 10px 10px 20px black;
+}
+
+#profesion {
+	position: relative;
+	float: right;
+	font-size: 45px;
+	bottom: 200px;
+	font-family: 'Bebas Neue', 'cursive';
+	font-weight: lighter;
+	letter-spacing: 1mm;
+}
+
+#tel {
+	color: #FFFFFF;
+	position: relative;
+	left: 350px;
+	bottom: 100px;
+	font-size: 25px;
+}
+
+#mail {
+	color: #FFFFFF;
+	position: relative;
+	left: 750px;
+	bottom: 130px;
+	font-size: 25px;
+
+}
+
+.contenedor-info {
+	width: 1100px;
+	height: 400px;
+	max-width: 90%;
+	margin: auto;
+	position: relative;
+	top: -30px;
+	border-radius: 20px;
+}
+
+ul.pestañas {
+	width: 100%;
+	height: 14.8%;
+	background: #05003bef;
+	list-style: none;
+	display: flex;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+ul.pestañas li {
+	width: 25%;
+}
+
+ul.pestañas li a {
+	color: #e8eacd;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: center;
+
+	display: block;
+	padding: 15.5px 0px;
+	font-family: 'Carter One', 'cursive';
+	text-shadow: 10px 10px 20px black;
+}
+
+.active {
+	background: #01a251e3;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.secciones {
+	background: #96cbb3e7;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.secciones article {
+	padding: 30px;
+	text-align: center;
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+.secciones article h2 {
+	font-size: 30px;
+}
+
+.secciones article p {
+	font-size: 20px;
+	padding: 30px;
+	line-height: 35px;
+}
+
+.secciones article ul {
+	font-size: 20px;
+	padding: 30px;
+	line-height: 35px;
+}
+
+footer {
+	color: #e8eacd;
+	margin-left: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+	ul.pestañas li {
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+
+	#nombre {
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+
+	#apellido {
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+
+	header img{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+
+	.encabezado{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	ul.pestañas li a {
+		padding: 15px 0px;
+	}
+
+	.secciones article {
+		padding: 20px;
+	}
+}
